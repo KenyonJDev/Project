@@ -13,7 +13,7 @@ app.use(staticDir('public'))
 app.use(bodyParser())
 app.use(session(app))
 
-const defaultPort = 8080
+const defaultPort = 3000
 const port = process.env.PORT || defaultPort
 
 app.use(router.routes())
