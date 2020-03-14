@@ -9,7 +9,7 @@ const session = require('koa-session')
 const app = new Koa()
 const router = new Router()
 
-app.use(staticDir('Project\public'))
+app.use(staticDir('public'))
 app.use(bodyParser())
 app.use(session(app))
 
